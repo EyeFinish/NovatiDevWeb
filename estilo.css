@@ -1,3 +1,85 @@
+/* Layout para contacto: info a la izquierda, formulario a la derecha */
+.contacto-flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 48px;
+    flex-wrap: wrap;
+    margin-top: 18px;
+    margin-bottom: 18px;
+}
+.contacto-info {
+    border-left: 5px solid #5E17EB;
+    padding: 18px 22px;
+    border-radius: 8px;
+    font-size: 1.08rem;
+    color: #222;
+    box-shadow: 0 2px 8px rgba(94,23,235,0.07);
+    max-width: 320px;
+    min-width: 220px;
+    flex: 0 0 260px;
+    background: none;
+}
+.contacto-info strong {
+    color: #5E17EB;
+    font-weight: 700;
+}
+.contacto-info a {
+    color: #5E17EB;
+    text-decoration: underline dotted;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+.contacto-info a:hover {
+    color: #3a0ca3;
+}
+.contacto-form {
+    flex: 1 1 320px;
+    min-width: 260px;
+    max-width: 400px;
+}
+.contacto-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+@media (max-width: 900px) {
+    .contacto-flex {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 24px;
+    }
+    .contacto-info, .contacto-form {
+        max-width: 100%;
+        min-width: unset;
+        flex: 1 1 100%;
+    }
+}
+/* Estilo para la información de contacto en la sección de contacto */
+.contacto-info {
+    background: #f6f3fd;
+    border-left: 5px solid #5E17EB;
+    padding: 14px 18px;
+    margin-bottom: 18px;
+    border-radius: 8px;
+    font-size: 1.08rem;
+    color: #222;
+    box-shadow: 0 2px 8px rgba(94,23,235,0.07);
+    max-width: 350px;
+}
+.contacto-info strong {
+    color: #5E17EB;
+    font-weight: 700;
+}
+.contacto-info a {
+    color: #5E17EB;
+    text-decoration: underline dotted;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+.contacto-info a:hover {
+    color: #3a0ca3;
+}
 /* Portafolio título alineado a la derecha y con detalles visuales */
 .portafolio-container {
     position: relative;
