@@ -13,7 +13,12 @@
     <header>
         <div class="container">
             <h1>Novati<span class="detalle-dev">Dev</span></h1>
-            <nav>
+            <button class="menu-toggle" aria-label="Abrir menú" aria-expanded="false">
+                <span class="menu-bar"></span>
+                <span class="menu-bar"></span>
+                <span class="menu-bar"></span>
+            </button>
+            <nav class="main-nav">
                 <ul>
                     <li><a href="#inicio">Inicio</a></li>
                     <li><a href="#portafolio">Portafolio</a></li>
@@ -24,7 +29,7 @@
     </header>
 
     <main>
-        <section id="inicio" class="hero">
+        <section id="inicio" class="hero animar-scroll">
             <div class="hero-circulos-bg">
                 <div class="circulo circulo-1"></div>
                 <div class="circulo circulo-2"></div>
@@ -33,12 +38,12 @@
                 <div class="circulo circulo-5"></div>
             </div>
             <div class="container hero-flex">
-                <div class="hero-texto">
+                <div class="hero-texto animar-scroll">
                     <h2>Desarrollo de Páginas Web Profesionales</h2>
                     <p>Transformamos ideas en sitios web funcionales y atractivos.</p>
                     <a href="https://calendly.com/novatidev/30min" class="btn">¡Hablemos ya!</a>
                 </div>
-                <div class="hero-video">
+                <div class="hero-video animar-scroll">
                     <div class="video-frame">
                         <video id="hero-video" src="./Fotosvideos/video de landing page .mp4" playsinline controls></video>
                     </div>
@@ -46,15 +51,15 @@
             </div>
         </section>
 
-        <section id="porque-nosotros" class="porque-nosotros">
+        <section id="porque-nosotros" class="porque-nosotros animar-scroll">
             <div class="container porque-flex">
-                <div class="porque-texto">
+                <div class="porque-texto animar-scroll">
                     <h2>¿Por qué elegirnos?</h2>
                     <p>
                      Nuestro compromiso es que tu página web sea profesional, segura y que realmente represente tu negocio. ¡Confía en nosotros para llevar tu presencia digital al siguiente nivel!
                     </p>
                 </div>
-                <div class="porque-img">
+                <div class="porque-img animar-scroll">
                     <div class="img-contenedor">
                         <span class="badge-proyectos">
                             <span class="badge-num">+100</span>
@@ -66,17 +71,17 @@
             </div>
         </section>
 
-        <section id="portafolio" class="portafolio">
+        <section id="portafolio" class="portafolio animar-scroll">
             <div class="container portafolio-container">
-                <h2 class="portafolio-titulo">Nuestros Trabajos</h2>
+                <h2 class="portafolio-titulo animar-scroll">Nuestros Trabajos</h2>
                 <div class="galeria">
-                    <div class="proyecto">
+                    <div class="proyecto animar-scroll">
                         <img src="./Fotosvideos/gestracoo web landing.png" alt="Gestraco Web">
                         <h3>Gestraco</h3>
                         <p>Gestión y control de operaciones para empresas.</p>
                         <a href="https://gestracoo.com" class="ver-mas" target="_blank" rel="noopener">Visitar sitio</a>
                     </div>
-                    <div class="proyecto">
+                    <div class="proyecto animar-scroll">
                         <img src="./Fotosvideos/regresofeliz web landing .png" alt="Regreso Feliz Web">
                         <h3>Regreso Feliz</h3>
                         <p>Plataforma de apoyo y recursos para el bienestar.</p>
@@ -86,16 +91,15 @@
             </div>
         </section>
 
-        <section id="contacto" class="contacto">
+        <section id="contacto" class="contacto animar-scroll">
             <div class="container">
-                <h2>¿Listo para tu proyecto?</h2>
-                <div class="contacto-flex">
-                    <div class="contacto-info">
+                <h2 class="animar-scroll">¿Listo para tu proyecto?</h2>
+                <div class="contacto-flex animar-scroll">
+                    <div class="contacto-info animar-scroll">
                         <strong>Ubicación:</strong> Santiago de Chile<br>
                         <strong>Correo:</strong> <a href="mailto:contactonovatidev@gmail.com">contactonovatidev@gmail.com</a>
                     </div>
-                    <div class="contacto-form">
-                        
+                    <div class="contacto-form animar-scroll">
                         <form>
                             <input type="text" placeholder="Nombre" required>
                             <input type="email" placeholder="Email" required>
