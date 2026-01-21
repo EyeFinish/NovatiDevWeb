@@ -25,14 +25,44 @@ document.addEventListener('DOMContentLoaded', function() {
 			const isOpen = mainNav.classList.toggle('open');
 			menuToggle.setAttribute('aria-expanded', isOpen);
 		});
-		// Cerrar menú al hacer click en un link
+		// Cerrar menú al hacer click en un link (excepto dropdown toggle)
 		mainNav.querySelectorAll('a').forEach(link => {
-			link.addEventListener('click', () => {
-				mainNav.classList.remove('open');
-				menuToggle.setAttribute('aria-expanded', false);
-			});
+			if (!link.classList.contains('dropdown-toggle')) {
+				link.addEventListener('click', () => {
+					mainNav.classList.remove('open');
+					menuToggle.setAttribute('aria-expanded', false);
+				});
+			}
 		});
 	}
+	
+	// Manejo del menú desplegable de productos con click
+	const dropdownToggles = document.querySelectorAll('.dropdown-toggle');
+	dropdownToggles.forEach(toggle => {
+		toggle.addEventListener('click', function(e) {
+			e.preventDefault(); // Evitar navegación
+			const dropdown = this.parentElement;
+			
+			// Cerrar otros dropdowns abiertos
+			document.querySelectorAll('.dropdown.active').forEach(otherDropdown => {
+				if (otherDropdown !== dropdown) {
+					otherDropdown.classList.remove('active');
+				}
+			});
+			
+			// Toggle del dropdown actual
+			dropdown.classList.toggle('active');
+		});
+	});
+	
+	// Cerrar dropdown al hacer click fuera
+	document.addEventListener('click', function(e) {
+		if (!e.target.closest('.dropdown')) {
+			document.querySelectorAll('.dropdown.active').forEach(dropdown => {
+				dropdown.classList.remove('active');
+			});
+		}
+	});
 });
 // Splash animado del logo NovatiDev
 window.addEventListener('DOMContentLoaded', function() {
@@ -49,6 +79,6 @@ window.addEventListener('DOMContentLoaded', function() {
 					heroVideo.play().catch(() => {/* Autoplay puede ser bloqueado por el navegador */});
 				}
 			}, 700);
-		}, 4000);
+		}, 1800);
 	}
 });

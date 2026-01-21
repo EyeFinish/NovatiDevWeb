@@ -3,17 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NovatiDev - Software Factory</title>
+    <title>NovatiDev - Desarrollo de Páginas Web</title>
     <link rel="icon" href="data:;base64,iVBORw0KGgo=">
     <link rel="stylesheet" href="estilo.css">
 </head>
 <body>
-    <div id="splash-logo">
-        <span class="splash-novati">Novati</span><span class="splash-dev">Dev</span>
-    </div>
     <header>
         <div class="container">
-            <h1>Novati<span class="detalle-dev">Dev</span></h1>
+            <h1><a href="index.html" style="text-decoration: none; color: inherit;">Novati<span class="detalle-dev">Dev</span></a></h1>
             <button class="menu-toggle" aria-label="Abrir menú" aria-expanded="false">
                 <span class="menu-bar"></span>
                 <span class="menu-bar"></span>
@@ -21,15 +18,15 @@
             </button>
             <nav class="main-nav">
                 <ul>
-                    <li><a href="#inicio">Inicio</a></li>
-                    <li><a href="#servicios">Servicios</a></li>
+                    <li><a href="index.html">← Volver al inicio</a></li>
                     <li class="dropdown">
-                        <a href="#productos" class="dropdown-toggle">Productos ▾</a>
+                        <a href="#" class="dropdown-toggle">Productos ▾</a>
                         <ul class="dropdown-menu">
                             <li><a href="paginaweb.html">🌐 Páginas Web</a></li>
                             <li><a href="aplicaciones.html">💻 Aplicaciones</a></li>
                         </ul>
                     </li>
+                    <li><a href="#portafolio">Portafolio</a></li>
                     <li><a href="#contacto">Contacto</a></li>
                 </ul>
             </nav>
@@ -37,62 +34,24 @@
     </header>
 
     <main>
-        <section id="inicio" class="hero hero-index animar-scroll">
-            <div class="hero-grid-bg">
-                <div class="grid-line grid-line-1"></div>
-                <div class="grid-line grid-line-2"></div>
-                <div class="grid-line grid-line-3"></div>
-                <div class="hero-gradient-overlay"></div>
+        <section id="inicio" class="hero animar-scroll">
+            <div class="hero-circulos-bg">
+                <div class="circulo circulo-1"></div>
+                <div class="circulo circulo-2"></div>
+                <div class="circulo circulo-3"></div>
+                <div class="circulo circulo-4"></div>
+                <div class="circulo circulo-5"></div>
             </div>
             <div class="container hero-flex">
-                <div class="hero-texto animar-scroll" style="max-width: 100%; text-align: center;">
-                    <h2>Software Factory</h2>
-                    <p>Desarrollamos software que soluciona y mejora las operaciones dentro de tu organización.</p>
-                    <a href="https://calendly.com/novatidev/30min" class="btn">¡Hablemos de tu proyecto!</a>
+                <div class="hero-texto animar-scroll">
+                    <h2>Desarrollo de Páginas Web Profesionales</h2>
+                    <p>Transformamos ideas en sitios web funcionales y atractivos.</p>
+                    <a href="https://calendly.com/novatidev/30min" class="btn">¡Hablemos ya!</a>
                 </div>
-            </div>
-        </section>
-
-        <section id="servicios" class="porque-nosotros animar-scroll">
-            <div class="container">
-                <h2 class="animar-scroll" style="text-align: center; margin-bottom: 3rem;">Nuestros Servicios</h2>
-                <div class="servicios-grid">
-                    <div class="servicio-card animar-scroll">
-                        <div class="servicio-icono">🌐</div>
-                        <h3>Páginas Web</h3>
-                        <p>Diseño y desarrollo de sitios web profesionales, responsivos y optimizados para SEO.</p>
+                <div class="hero-video animar-scroll">
+                    <div class="video-frame">
+                        <video id="hero-video" src="./Fotosvideos/video de landing page .mp4" playsinline controls></video>
                     </div>
-                    <div class="servicio-card animar-scroll">
-                        <div class="servicio-icono">💻</div>
-                        <h3>Aplicaciones Web</h3>
-                        <p>Desarrollo de aplicaciones web escalables y robustas para gestión empresarial.</p>
-                    </div>
-                    <div class="servicio-card animar-scroll">
-                        <div class="servicio-icono">📱</div>
-                        <h3>Aplicaciones Móviles</h3>
-                        <p>Apps nativas y multiplataforma para iOS y Android, optimizadas para el rendimiento.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="productos" class="portafolio animar-scroll">
-            <div class="container portafolio-container">
-                <h2 class="portafolio-titulo animar-scroll">Nuestros Productos</h2>
-                <p class="productos-descripcion animar-scroll">Explora nuestras soluciones especializadas para diferentes necesidades empresariales</p>
-                <div class="productos-botones">
-                    <a href="paginaweb.html" class="producto-btn animar-scroll">
-                        <div class="producto-btn-icono">🌐</div>
-                        <h3>Páginas Web</h3>
-                        <p>Sitios web corporativos y landing pages</p>
-                        <span class="producto-btn-arrow">→</span>
-                    </a>
-                    <a href="aplicaciones.html" class="producto-btn animar-scroll">
-                        <div class="producto-btn-icono">💻</div>
-                        <h3>App Web & Móvil</h3>
-                        <p>Aplicaciones web y móviles personalizadas</p>
-                        <span class="producto-btn-arrow">→</span>
-                    </a>
                 </div>
             </div>
         </section>
@@ -100,16 +59,10 @@
         <section id="porque-nosotros" class="porque-nosotros animar-scroll">
             <div class="container porque-flex">
                 <div class="porque-texto animar-scroll">
-                    <h2>¿Por qué NovatiDev?</h2>
+                    <h2>¿Por qué elegirnos?</h2>
                     <p>
-                        Somos una Software Factory comprometida con la excelencia. Nuestro enfoque está en entender las necesidades de tu organización y desarrollar soluciones tecnológicas que optimicen procesos, aumenten la productividad y generen valor real para tu negocio.
+                     Nuestro compromiso es que tu página web sea profesional, segura y que realmente represente tu negocio. ¡Confía en nosotros para llevar tu presencia digital al siguiente nivel!
                     </p>
-                    <ul class="porque-lista">
-                        <li>✓ Soluciones personalizadas</li>
-                        <li>✓ Tecnología de vanguardia</li>
-                        <li>✓ Soporte continuo</li>
-                        <li>✓ Resultados medibles</li>
-                    </ul>
                 </div>
                 <div class="porque-img animar-scroll">
                     <div class="img-contenedor">
@@ -117,7 +70,27 @@
                             <span class="badge-num">+100</span>
                             <span class="badge-txt">proyectos</span>
                         </span>
-                        <img src="./Fotosvideos/aplicaciones .png" alt="Equipo NovatiDev" />
+                        <img src="./Fotosvideos/fotoeliemnto.png" alt="Equipo NovatiDev" />
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="portafolio" class="portafolio animar-scroll">
+            <div class="container portafolio-container">
+                <h2 class="portafolio-titulo animar-scroll">Nuestros Trabajos</h2>
+                <div class="galeria">
+                    <div class="proyecto animar-scroll">
+                        <img src="./Fotosvideos/gestracoo web landing.png" alt="Gestraco Web">
+                        <h3>Gestraco</h3>
+                        <p>Gestión y control de operaciones para empresas.</p>
+                        <a href="https://gestracoo.com" class="ver-mas" target="_blank" rel="noopener">Visitar sitio</a>
+                    </div>
+                    <div class="proyecto animar-scroll">
+                        <img src="./Fotosvideos/regresofeliz web landing .png" alt="Regreso Feliz Web">
+                        <h3>Regreso Feliz</h3>
+                        <p>Plataforma de apoyo y recursos para el bienestar.</p>
+                        <a href="https://regresofeliz.com" class="ver-mas" target="_blank" rel="noopener">Visitar sitio</a>
                     </div>
                 </div>
             </div>
@@ -127,8 +100,8 @@
             <div class="contacto-bg-shape"></div>
             <div class="container">
                 <div class="contacto-header animar-scroll">
-                    <h2>¿Listo para transformar tu organización?</h2>
-                    <p>Conversemos sobre tu proyecto y cómo podemos ayudarte</p>
+                    <h2>¿Listo para tu proyecto?</h2>
+                    <p>Conversemos sobre tu página web ideal</p>
                 </div>
                 <div class="contacto-grid">
                     <div class="contacto-info-card animar-scroll">
@@ -181,6 +154,7 @@
             <p>&copy; 2026 NovatiDev. Todos los derechos reservados.</p>
         </div>
     </footer>
+
 
     <script src="Funcionalidad.js"></script>
 </body>
