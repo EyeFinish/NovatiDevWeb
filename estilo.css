@@ -1095,26 +1095,40 @@ button.btn:hover {
     margin-top: 0.5rem;
 }
 
-@media (max-width: 968px) {
+@media (max-width: 768px) {
+    .proyectos-seccion {
+        padding: 30px 0;
+    }
+    
     .proyectos-flex {
         flex-direction: row;
-        gap: 1rem;
+        gap: 0.8rem;
         align-items: flex-start;
     }
     
     .proyectos-media {
-        flex: 0 0 180px;
-        max-width: 180px;
+        flex: 0 0 45%;
+        max-width: 45%;
+    }
+    
+    .proyectos-video {
+        margin-bottom: 0.5rem;
     }
     
     .proyectos-video video {
-        max-height: 100px;
+        max-height: 110px;
         border-radius: 8px;
+        width: 100%;
+        object-fit: cover;
     }
     
     .proyectos-galeria {
         grid-template-columns: repeat(3, 1fr);
-        gap: 0.3rem;
+        gap: 0.25rem;
+    }
+    
+    .proyectos-galeria img {
+        border-radius: 4px;
     }
     
     .proyectos-contenido {
@@ -1124,24 +1138,25 @@ button.btn:hover {
     }
     
     .proyectos-contenido h2 {
-        font-size: 1.3rem;
-        margin-bottom: 0.4rem;
-    }
-    
-    .proyectos-contenido h3 {
-        font-size: 1rem;
+        font-size: 1.2rem;
         margin-bottom: 0.3rem;
     }
     
+    .proyectos-contenido h3 {
+        font-size: 0.95rem;
+        margin-bottom: 0.25rem;
+    }
+    
     .proyectos-contenido p {
-        font-size: 0.85rem;
-        line-height: 1.4;
-        margin: 0 0 0.8rem 0;
+        font-size: 0.8rem;
+        line-height: 1.3;
+        margin: 0 0 0.6rem 0;
     }
     
     .btn-proyecto {
-        font-size: 0.85rem;
-        padding: 0.5rem 1rem;
+        font-size: 0.8rem;
+        padding: 0.4rem 0.8rem;
+        white-space: nowrap;
     }
 }
 
